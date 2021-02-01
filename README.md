@@ -1,14 +1,17 @@
 Summary for setting up a minimum A20 device (Cortex-A7) image
 =============================================================
 
-This repository is my playground to setup a minimal image which is more or less GPL/LGPL or related license free. The idea is to have only the linux kernel as GPL and all other parts are with more permissive license.
+This repository is my playground to setup a minimal image () which different components than "normally". The idea is to have only the linux kernel as fundament and all other parts are not mainstream.
 
-I got a lot of questions about that topic, so i decided to try it out, this is the playground for it.
+I`m interested in embedded linux in general and so i decided to try it out, this is the playground for it.
 
 Steps:
-- i want to use MUSL, OpenRC and toybox for the basic system
-- decide for syslog replacement (with https://github.com/troglobit/sysklogd/)
-- then active SELinux (or appamor or SMACK), seccomp, namespaces and cgroups
+- use MUSL
+- use OpenRC
+- change to the sysklogd (https://github.com/troglobit/sysklogd/) like slackware (http://www.slackware.com)
+- use toybox (https://landley.net/toybox/) instead of busybox (ox is used in android)
+- then active SELinux (or appamor or SMACK), seccomp, namespaces and cgroups and see if such topics still work as expected
+- ...
 
 
 WARNING: This is work in progress! So it's possible that something is not working as expected.

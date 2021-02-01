@@ -29,7 +29,7 @@ scanning bus usb@1c14400 for devices... 1 USB Device(s) found
 scanning bus usb@1c1c000 for devices... 1 USB Device(s) found
 scanning bus usb@1c1c400 for devices... 1 USB Device(s) found
        scanning usb for storage devices... 0 Storage Device(s) found
-Hit any key to stop autoboot:  0 
+Hit any key to stop autoboot:  0
 switch to partitions #0, OK
 mmc0 is current device
 Scanning mmc 0:1...
@@ -176,7 +176,7 @@ Starting kernel ...
 [    1.105551] ahci-sunxi 1c18000.sata: controller can't do PMP, turning off CAP_PMP
 [    1.113040] ahci-sunxi 1c18000.sata: forcing PORTS_IMPL to 0x1
 [    1.118955] ahci-sunxi 1c18000.sata: AHCI 0001.0100 32 slots 1 ports 3 Gbps 0x1 impl platform mode
-[    1.127931] ahci-sunxi 1c18000.sata: flags: ncq sntf pm led clo only pio slum part ccc 
+[    1.127931] ahci-sunxi 1c18000.sata: flags: ncq sntf pm led clo only pio slum part ccc
 [    1.137062] scsi host0: ahci-sunxi
 [    1.140957] ata1: SATA max UDMA/133 mmio [mem 0x01c18000-0x01c18fff] port 0x100 irq 36
 [    1.150793] libphy: Fixed MDIO Bus: probed
@@ -241,7 +241,7 @@ tmpfs                   502.4M         0    502.4M   0% /dev/shm
 tmpfs                   502.4M     28.0K    502.3M   0% /tmp
 tmpfs                   502.4M     12.0K    502.4M   0% /run
 
-# cat /proc/meminfo 
+# cat /proc/meminfo
 MemTotal:        1028864 kB
 MemFree:         1015020 kB
 MemAvailable:    1002408 kB

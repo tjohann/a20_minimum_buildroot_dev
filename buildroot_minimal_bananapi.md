@@ -1,7 +1,7 @@
 Setup of an minimal buildroot image for a bananapi
 ==================================================
 
-Goals: setup a minimal image with as less as possible GPL or related Software (for example: use MUSL and toybox)
+Goals: setup a minimal image with non "mainstream" components
 Additions: see https://git.buildroot.net/buildroot/tree/board/bananapi/bananapi-m1
 
 In folder buildroot_minimal_bananapi you can find the .config`s for the different steps and on sourceforge.net (https://sourceforge.net/projects/a20-minimum-buildroot/) you can find the packed image folder.

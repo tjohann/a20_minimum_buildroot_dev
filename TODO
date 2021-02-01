@@ -12,6 +12,14 @@
 - setup sourceforge.net project and upload first
   image tarballs                                           [2021-02-02 -> done]
 
+## target stuff
+- try out https://github.com/troglobit/sysklogd/
+- try out https://landley.net/toybox/
+
+## target stuff
+- update kernel to latest version
+- add rt-preempt support
+- update compiler to gcc-10.x.x
 
 ## backup
 [2021-02-01 -> canceled]

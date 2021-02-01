@@ -9,3 +9,6 @@
 
               add checksum file for image downloads from
 	      https://sourceforge.net/projects/a20-minimum-buildroot/files/
+
+              ## target & sdk stuff
+	      add v03 (busybox with runit tools) and v04 (OpenRC)

@@ -1,0 +1,285 @@
+
+U-Boot SPL 2020.10 (Feb 01 2021 - 19:03:31 +0100)
+DRAM: 1024 MiB
+CPU: 912000000Hz, AXI/AHB/APB: 3/2/2
+Trying to boot from MMC1
+
+
+U-Boot 2020.10 (Feb 01 2021 - 19:03:31 +0100) Allwinner Technology
+
+CPU:   Allwinner A20 (SUN7I)
+Model: LeMaker Banana Pi
+I2C:   ready
+DRAM:  1 GiB
+MMC:   mmc@1c0f000: 0
+Loading Environment from FAT... *** Warning - bad CRC, using default environment
+
+Setting up a 720x576i composite-pal console (overscan 32x20)
+In:    serial
+Out:   vga
+Err:   vga
+Net:   eth0: ethernet@1c50000
+starting USB...
+Bus usb@1c14000: USB EHCI 1.00
+Bus usb@1c14400: USB OHCI 1.0
+Bus usb@1c1c000: USB EHCI 1.00
+Bus usb@1c1c400: USB OHCI 1.0
+scanning bus usb@1c14000 for devices... 1 USB Device(s) found
+scanning bus usb@1c14400 for devices... 1 USB Device(s) found
+scanning bus usb@1c1c000 for devices... 1 USB Device(s) found
+scanning bus usb@1c1c400 for devices... 1 USB Device(s) found
+       scanning usb for storage devices... 0 Storage Device(s) found
+Hit any key to stop autoboot:  0 
+switch to partitions #0, OK
+mmc0 is current device
+Scanning mmc 0:1...
+Found U-Boot script /boot.scr
+282 bytes read in 1 ms (275.4 KiB/s)
+## Executing script at 43100000
+switch to partitions #0, OK
+mmc0 is current device
+4045896 bytes read in 223 ms (17.3 MiB/s)
+27825 bytes read in 4 ms (6.6 MiB/s)
+## Flattened Device Tree blob at 43000000
+   Booting using the fdt blob at 0x43000000
+EHCI failed to shut down host controller.
+   Loading Device Tree to 49ff6000, end 49fffcb0 ... OK
+
+Starting kernel ...
+
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 4.19.172 (tjohann@echnaton) (gcc version 9.3.0 (Buildroot 2020.11-1158-g5595799812)) #1 SMP Mon Feb 1 19:03:58 CET 2021
+[    0.000000] CPU: ARMv7 Processor [410fc074] revision 4 (ARMv7), cr=10c5387d
+[    0.000000] CPU: div instructions available: patching division code
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] OF: fdt: Machine model: LeMaker Banana Pi
+[    0.000000] Memory policy: Data cache writealloc
+[    0.000000] cma: Reserved 16 MiB at 0x7ec00000
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: Using PSCI v0.1 Function IDs from DT
+[    0.000000] random: get_random_bytes called from start_kernel+0xa4/0x418 with crng_init=0
+[    0.000000] percpu: Embedded 15 pages/cpu s30476 r8192 d22772 u61440
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 260202
+[    0.000000] Kernel command line: console=ttyS0,115200 earlyprintk root=/dev/mmcblk0p2 rootwait
+[    0.000000] Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] Memory: 1011456K/1046952K available (6144K kernel code, 420K rwdata, 1548K rodata, 1024K init, 245K bss, 19112K reserved, 16384K cma-reserved, 244136K highmem)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+[    0.000000]     vmalloc : 0xf0800000 - 0xff800000   ( 240 MB)
+[    0.000000]     lowmem  : 0xc0000000 - 0xf0000000   ( 768 MB)
+[    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+[    0.000000]     modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+[    0.000000]       .text : 0x(ptrval) - 0x(ptrval)   (7136 kB)
+[    0.000000]       .init : 0x(ptrval) - 0x(ptrval)   (1024 kB)
+[    0.000000]       .data : 0x(ptrval) - 0x(ptrval)   ( 421 kB)
+[    0.000000]        .bss : 0x(ptrval) - 0x(ptrval)   ( 246 kB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] rcu: Hierarchical RCU implementation.
+[    0.000000] rcu:     RCU restricting CPUs from NR_CPUS=8 to nr_cpu_ids=2.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+[    0.000000] NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+[    0.000000] GIC: Using split EOI/Deactivate mode
+[    0.000000] arch_timer: cp15 timer(s) running at 24.00MHz (phys).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x588fe9dc0, max_idle_ns: 440795202592 ns
+[    0.000007] sched_clock: 56 bits at 24MHz, resolution 41ns, wraps every 4398046511097ns
+[    0.000019] Switching to timer-based delay loop, resolution 41ns
+[    0.000354] clocksource: timer: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 79635851949 ns
+[    0.000610] clocksource: hstimer: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6370868154 ns
+[    0.000833] Console: colour dummy device 80x30
+[    0.000895] Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=240000)
+[    0.000911] pid_max: default: 32768 minimum: 301
+[    0.001085] Mount-cache hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.001100] Mountpoint-cache hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.001750] CPU: Testing write buffer coherency: ok
+[    0.002176] /cpus/cpu@0 missing clock-frequency property
+[    0.002203] /cpus/cpu@1 missing clock-frequency property
+[    0.002218] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.002797] Setting up static identity map for 0x40100000 - 0x40100060
+[    0.002981] rcu: Hierarchical SRCU implementation.
+[    0.003785] smp: Bringing up secondary CPUs ...
+[    0.014549] CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+[    0.014704] smp: Brought up 1 node, 2 CPUs
+[    0.014724] SMP: Total of 2 processors activated (96.00 BogoMIPS).
+[    0.014731] CPU: All CPU(s) started in HYP mode.
+[    0.014737] CPU: Virtualization extensions available.
+[    0.015840] devtmpfs: initialized
+[    0.022268] VFP support v0.3: implementor 41 architecture 2 part 30 variant 7 rev 4
+[    0.022519] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.022545] futex hash table entries: 512 (order: 3, 32768 bytes)
+[    0.023332] pinctrl core: initialized pinctrl subsystem
+[    0.024298] NET: Registered protocol family 16
+[    0.025752] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.026931] hw-breakpoint: found 5 (+1 reserved) breakpoint and 4 watchpoint registers.
+[    0.026947] hw-breakpoint: maximum watchpoint size is 8 bytes.
+[    0.043242] SCSI subsystem initialized
+[    0.043816] usbcore: registered new interface driver usbfs
+[    0.043868] usbcore: registered new interface driver hub
+[    0.043917] usbcore: registered new device driver usb
+[    0.044194] pps_core: LinuxPPS API ver. 1 registered
+[    0.044203] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.044225] PTP clock support registered
+[    0.044559] Advanced Linux Sound Architecture Driver Initialized.
+[    0.045504] clocksource: Switched to clocksource arch_sys_counter
+[    0.046275] simple-framebuffer 7fe79000.framebuffer: framebuffer at 0x7fe79000, 0x178e00 bytes, mapped to 0x(ptrval)
+[    0.046293] simple-framebuffer 7fe79000.framebuffer: format=x8r8g8b8, mode=656x536x32, linelength=2880
+[    0.052526] Console: switching to colour frame buffer device 82x33
+[    0.058373] simple-framebuffer 7fe79000.framebuffer: fb0: simplefb registered!
+[    0.066259] NET: Registered protocol family 2
+[    0.066832] tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 6144 bytes)
+[    0.066865] TCP established hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.066945] TCP bind hash table entries: 8192 (order: 4, 65536 bytes)
+[    0.067072] TCP: Hash tables configured (established 8192 bind 8192)
+[    0.067206] UDP hash table entries: 512 (order: 2, 16384 bytes)
+[    0.067275] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+[    0.067515] NET: Registered protocol family 1
+[    0.068168] RPC: Registered named UNIX socket transport module.
+[    0.068188] RPC: Registered udp transport module.
+[    0.068194] RPC: Registered tcp transport module.
+[    0.068201] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.068847] hw perfevents: no interrupt-affinity property for /pmu, guessing.
+[    0.069117] hw perfevents: enabled with armv7_cortex_a7 PMU driver, 5 counters available
+[    0.070753] workingset: timestamp_bits=30 max_order=18 bucket_order=0
+[    0.077691] NFS: Registering the id_resolver key type
+[    0.077741] Key type id_resolver registered
+[    0.077749] Key type id_legacy registered
+[    0.079031] bounce: pool size: 64 pages
+[    0.079109] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 248)
+[    0.079122] io scheduler noop registered
+[    0.079129] io scheduler deadline registered
+[    0.079323] io scheduler cfq registered (default)
+[    0.079336] io scheduler mq-deadline registered
+[    0.079343] io scheduler kyber registered
+[    0.083690] sun4i-pinctrl 1c20800.pinctrl: initialized sunXi PIO driver
+[    0.140735] Serial: 8250/16550 driver, 8 ports, IRQ sharing disabled
+[    0.143347] console [ttyS0] disabled
+[    0.163579] 1c28000.serial: ttyS0 at MMIO 0x1c28000 (irq = 48, base_baud = 1500000) is a U6_16550A
+[    0.829415] console [ttyS0] enabled
+[    0.856045] 1c28c00.serial: ttyS1 at MMIO 0x1c28c00 (irq = 49, base_baud = 1500000) is a U6_16550A
+[    0.888091] 1c29c00.serial: ttyS2 at MMIO 0x1c29c00 (irq = 50, base_baud = 1500000) is a U6_16550A
+[    0.901053] sun4i-backend 1e60000.display-backend: Couldn't find matching frontend, frontend features disabled
+[    0.911431] sun4i-drm display-engine: bound 1e60000.display-backend (ops 0xc0748fb0)
+[    0.919210] sun4i-backend 1e40000.display-backend: Couldn't find matching frontend, frontend features disabled
+[    0.929491] sun4i-drm display-engine: bound 1e40000.display-backend (ops 0xc0748fb0)
+[    0.937657] sun4i-drm display-engine: No panel or bridge found... RGB output disabled
+[    0.945525] sun4i-drm display-engine: bound 1c0c000.lcd-controller (ops 0xc0747f30)
+[    0.953571] sun4i-drm display-engine: No panel or bridge found... RGB output disabled
+[    0.961435] sun4i-drm display-engine: bound 1c0d000.lcd-controller (ops 0xc0747f30)
+[    0.969526] sun4i-drm display-engine: bound 1c16000.hdmi (ops 0xc07499bc)
+[    0.976338] [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[    0.982943] [drm] No driver support for vblank timestamp query.
+[    0.988876] fb: switching to sun4i-drm-fb from simple
+[    0.994034] Console: switching to colour dummy device 80x30
+[    1.000028] [drm] Cannot find any crtc or sizes
+[    1.005225] [drm] Initialized sun4i-drm 1.0.0 20150629 for display-engine on minor 0
+[    1.105551] ahci-sunxi 1c18000.sata: controller can't do PMP, turning off CAP_PMP
+[    1.113040] ahci-sunxi 1c18000.sata: forcing PORTS_IMPL to 0x1
+[    1.118955] ahci-sunxi 1c18000.sata: AHCI 0001.0100 32 slots 1 ports 3 Gbps 0x1 impl platform mode
+[    1.127931] ahci-sunxi 1c18000.sata: flags: ncq sntf pm led clo only pio slum part ccc 
+[    1.137062] scsi host0: ahci-sunxi
+[    1.140957] ata1: SATA max UDMA/133 mmio [mem 0x01c18000-0x01c18fff] port 0x100 irq 36
+[    1.150793] libphy: Fixed MDIO Bus: probed
+[    1.154902] CAN device driver interface
+[    1.159566] sun7i-dwmac 1c50000.ethernet: PTP uses main clock
+[    1.165319] sun7i-dwmac 1c50000.ethernet: no reset control found
+[    1.172046] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.178608] ehci-platform: EHCI generic platform driver
+[    1.184222] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    1.190459] ohci-platform: OHCI generic platform driver
+[    1.197820] sunxi-rtc 1c20d00.rtc: registered as rtc0
+[    1.202881] sunxi-rtc 1c20d00.rtc: RTC enabled
+[    1.207530] i2c /dev entries driver
+[    1.212251] axp20x-i2c 1-0034: AXP20x variant AXP209 found
+[    1.232769] input: axp20x-pek as /devices/platform/soc@1c00000/1c2ac00.i2c/i2c-1/1-0034/axp20x-pek/input/input0
+[    1.244414] vdd-rtc: supplied by regulator-dummy
+[    1.250253] avcc: supplied by regulator-dummy
+[    1.255250] ldo3: supplied by regulator-dummy
+[    1.259909] ldo4: supplied by regulator-dummy
+[    1.264884] ldo5: supplied by regulator-dummy
+[    1.270390] vdd-cpu: supplied by regulator-dummy
+[    1.275698] vdd-int-dll: supplied by regulator-dummy
+[    1.281783] axp20x-i2c 1-0034: AXP20X driver loaded
+[    1.288221] Registered IR keymap rc-empty
+[    1.292334] rc rc0: sunxi-ir as /devices/platform/soc@1c00000/1c21800.ir/rc/rc0
+[    1.299859] input: sunxi-ir as /devices/platform/soc@1c00000/1c21800.ir/rc/rc0/input1
+[    1.308220] sunxi-ir 1c21800.ir: initialized sunXi IR driver
+[    1.314269] axp20x-usb-power-supply axp20x-usb-power-supply: DMA mask not set
+[    1.322516] axp20x-battery-power-supply axp20x-battery-power-supply: DMA mask not set
+[    1.330585] axp20x-ac-power-supply axp20x-ac-power-supply: DMA mask not set
+[    1.338091] sunxi-wdt 1c20c90.watchdog: Watchdog enabled (timeout=16 sec, nowayout=0)
+[    1.346551] cpu cpu0: Linked as a consumer to regulator.9
+[    1.352013] cpu cpu0: Dropping the link to regulator.9
+[    1.357449] cpu cpu0: Linked as a consumer to regulator.9
+[    1.365333] sunxi-mmc 1c0f000.mmc: Linked as a consumer to regulator.2
+[    1.372556] sunxi-mmc 1c0f000.mmc: Got CD GPIO
+[    1.402664] sunxi-mmc 1c0f000.mmc: initialized, max. request size: 16384 KB
+[    1.410807] sun4i-ss 1c15000.crypto-engine: Die ID 0
+[    1.417710] usbcore: registered new interface driver usbhid
+[    1.423286] usbhid: USB HID core driver
+[    1.427442] axp20x-adc axp20x-adc: DMA mask not set
+[    1.433421] random: fast init done
+[    1.440024] sun4i-codec 1c22c00.codec: ASoC: Failed to create component debugfs directory
+[    1.449619] sun4i-codec 1c22c00.codec: Codec <-> 1c22c00.codec mapping ok
+[    1.458156] NET: Registered protocol family 17
+[    1.462636] can: controller area network core (rev 20170425 abi 9)
+[    1.468957] NET: Registered protocol family 29
+[    1.473405] can: raw protocol (rev 20170425)
+[    1.477495] ata1: SATA link down (SStatus 0 SControl 300)
+[    1.477700] can: broadcast manager protocol (rev 20170425 t)
+[    1.488729] can: netlink gateway (rev 20170425) max_hops=1
+
+
+# uname -a
+Linux buildroot 4.19.172 #1 SMP Mon Feb 1 19:03:58 CET 2021 armv7l GNU/Linux
+
+# df -h
+Filesystem                Size      Used Available Use% Mounted on
+/dev/root                54.1M      2.8M     47.1M   6% /
+devtmpfs                493.9M         0    493.9M   0% /dev
+tmpfs                   502.4M         0    502.4M   0% /dev/shm
+tmpfs                   502.4M     28.0K    502.3M   0% /tmp
+tmpfs                   502.4M     12.0K    502.4M   0% /run
+
+# cat /proc/meminfo 
+MemTotal:        1028864 kB
+MemFree:         1015020 kB
+MemAvailable:    1002408 kB
+Buffers:             200 kB
+Cached:             1404 kB
+SwapCached:            0 kB
+Active:             1596 kB
+Inactive:            148 kB
+Active(anon):        168 kB
+Inactive(anon):       12 kB
+Active(file):       1428 kB
+Inactive(file):      136 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+HighTotal:        260520 kB
+HighFree:         257048 kB
+LowTotal:         768344 kB
+LowFree:          757972 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:           140 kB
+Mapped:             1008 kB
+Shmem:                40 kB
+Slab:               7124 kB
+SReclaimable:       1660 kB
+SUnreclaim:         5464 kB
+KernelStack:         416 kB
+PageTables:           60 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      514432 kB
+Committed_AS:       2028 kB
+VmallocTotal:     245760 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+Percpu:              120 kB
+CmaTotal:          16384 kB
+CmaFree:           14976 kB

@@ -83,3 +83,9 @@ Results (compare with v02 -> v03 makes no sense):
 	/dev/root increase from 2,7 to 4,6M (as expected)
 	memory consumption is increasing (as expected)
 	startup time decreases (as expected)
+
+
+Deactivate busybox parts (bananapi_minimal_config_buildroot_v05)
+----------------------------------------------------------------
+
+Deactivate busybox parts, change default shell to dash and build again.

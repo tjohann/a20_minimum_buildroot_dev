@@ -55,3 +55,12 @@ Results:
 
 
 NOTE: i moved everthing in a new repository@github -> see https://github.com/tjohann/a20_minimum_buildroot_dev
+
+
+Adapt init system from busybox
+------------------------------
+
+Copy my_busybox.config to package/busybox/my_busybox.config and use bananapi_minimal_config_buildroot_v03 .
+
+Summary in result_bananapi_minimal_config_buildroot_v03.txt
+Images in bananapi_minimal_image_v03.tgz

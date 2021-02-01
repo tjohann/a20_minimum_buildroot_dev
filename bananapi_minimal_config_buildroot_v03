@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Buildroot 2020.11-1158-g5595799812 Configuration
+# Buildroot 2020.11-1195-g8023a8814b Configuration
 #
 BR2_HAVE_DOT_CONFIG=y
 BR2_HOST_GCC_AT_LEAST_4_9=y
@@ -555,7 +555,7 @@ BR2_LINUX_KERNEL_CUSTOM_DTS_PATH=""
 # Target packages
 #
 BR2_PACKAGE_BUSYBOX=y
-BR2_PACKAGE_BUSYBOX_CONFIG="package/busybox/busybox.config"
+BR2_PACKAGE_BUSYBOX_CONFIG="package/busybox/my_busybox.config"
 BR2_PACKAGE_BUSYBOX_CONFIG_FRAGMENT_FILES=""
 # BR2_PACKAGE_BUSYBOX_SHOW_OTHERS is not set
 # BR2_PACKAGE_BUSYBOX_INDIVIDUAL_BINARIES is not set
@@ -1150,7 +1150,7 @@ BR2_PACKAGE_QT5_JSCORE_AVAILABLE=y
 # BR2_PACKAGE_CBOOTIMAGE is not set
 
 #
-# cc-tool needs a toolchain w/ C++, threads, wchar, gcc >= 4.9
+# cc-tool needs a toolchain w/ C++, threads, wchar, gcc >= 4.9 
 #
 # BR2_PACKAGE_CDRKIT is not set
 BR2_PACKAGE_CPUBURN_ARM_ARCH_SUPPORTS=y
@@ -2574,7 +2574,7 @@ BR2_PACKAGE_LIBBSD_ARCH_SUPPORTS=y
 # BR2_PACKAGE_LIBGEE is not set
 
 #
-# libgeos needs a toolchain w/ C++
+# libgeos needs a toolchain w/ C++, wchar
 #
 # BR2_PACKAGE_LIBGLIB2 is not set
 # BR2_PACKAGE_LIBGLOB is not set
@@ -3195,35 +3195,35 @@ BR2_PACKAGE_IFUPDOWN_SCRIPTS=y
 #
 
 #
-# Please note:
+# Please note:                                           
 #
 
 #
-# - Buildroot does *not* generate binary packages,
+# - Buildroot does *not* generate binary packages,       
 #
 
 #
-# - Buildroot does *not* install any package database.
+# - Buildroot does *not* install any package database.   
 #
 
 #
-# *
+# *                                                      
 #
 
 #
-# It is up to you to provide those by yourself if you
+# It is up to you to provide those by yourself if you    
 #
 
 #
-# want to use any of those package managers.
+# want to use any of those package managers.             
 #
 
 #
-# *
+# *                                                      
 #
 
 #
-# See the manual:
+# See the manual:                                        
 #
 
 #

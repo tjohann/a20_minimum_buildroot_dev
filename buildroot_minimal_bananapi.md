@@ -88,4 +88,12 @@ Results (compare with v02 -> v03 makes no sense):
 Deactivate busybox parts (bananapi_minimal_config_buildroot_v05)
 ----------------------------------------------------------------
 
-Deactivate busybox parts, change default shell to dash and build again.
+Deactivate busybox parts, change default shell to mksh
+Activate util-linux and all provided tools
+Activate coreutils with individual binaries
+Activate grep
+Activate sysklogd
+
+and build again ...
+
+t.b.c.

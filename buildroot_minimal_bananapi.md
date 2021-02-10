@@ -93,7 +93,23 @@ Activate util-linux and all provided tools
 Activate coreutils with individual binaries
 Activate grep
 Activate sysklogd
+Activate net-tools
+ACtivate iputils
+Change agetty device from console to ttyS0
 
 and build again ...
 
-t.b.c.
+Summary in result_bananapi_minimal_config_buildroot_v05.txt
+Images in bananapi_minimal_image_v05.tgz
+
+Results:
+
+	no login possible ....
+
+
+Fix login topics (bananapi_minimal_config_buildroot_v06)
+--------------------------------------------------------
+
+
+Fix login problem!
+

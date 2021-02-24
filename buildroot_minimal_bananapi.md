@@ -110,6 +110,6 @@ Results:
 Fix login topics (bananapi_minimal_config_buildroot_v06)
 --------------------------------------------------------
 
-
-Fix login problem!
+Update to latest buildroot repo
+Fix login problems (ongoing!)
 
